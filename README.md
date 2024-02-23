@@ -4,14 +4,14 @@
 
 ###### take the following steps
 ###### run up the environment
-docker-compose up -d
+'docker-compose up -d
 
 ###### create the source topic and configure replicator
-./configure-replicator.sh
+'./configure-replicator.sh
 
 ###### Produce some stuff:
-docker-compose exec srcKafka kafka-console-producer --bootstrap-server srcKafka:19092 --topic topic-test
-<send some messages, control-D to exit>
+'docker-compose exec srcKafka kafka-console-producer --bootstrap-server srcKafka:19092 --topic topic-test
+'<send some messages, control-D to exit>
 
 ###### You should see them replicated on the dest side
 ###### You can look at the source Control Center via <ipaddress>:/19021
