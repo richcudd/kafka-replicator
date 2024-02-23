@@ -2,11 +2,11 @@
 Shameless steal of Tomás Dias Almeida's kafka replicator repo but adapted to for testing across an environment using two networks
 also examples do not use schema reg initially just to keep it simple
 
-take the following steps
-run up the environment
+Take the following steps
+Run up the environment:
 `docker-compose up -d`
 
-create the source topic and configure replicator
+Create the source topic and configure replicator:
 `./configure-replicator.sh`
 
 Produce some stuff:
