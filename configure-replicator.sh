@@ -17,13 +17,13 @@ DATA=$( cat << EOF
 
     "topic.whitelist": "topic-test",
 
-    "src.kafka.bootstrap.servers": "srcKafka:19092",
+    "src.kafka.bootstrap.servers": "srcKafka.kafka_network:19092",
     "src.key.converter": "org.apache.kafka.connect.storage.StringConverter",
     "src.key.converter.schemas.enable": "false",
     "src.value.converter": "org.apache.kafka.connect.storage.StringConverter",
     "src.value.converter.schema.registry.url": "http://srcSchemaregistry:8085",
 
-    "dest.kafka.bootstrap.servers": "destKafka:29092",
+    "dest.kafka.bootstrap.servers": "destKafka.kafka_network:29092",
     "key.converter": "org.apache.kafka.connect.storage.StringConverter",
     "key.converter.schemas.enable": "false",
     "value.converter": "org.apache.kafka.connect.storage.StringConverter",
