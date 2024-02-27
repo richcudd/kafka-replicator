@@ -186,6 +186,7 @@ services:
     restart: always
     networks:
       - default
+      - network1
     ports:
       - "8083:8083"
     depends_on:
